@@ -1,0 +1,72 @@
+{
+    "index_comparison": {
+        "common": [
+            "employees"
+        ],
+        "only_in_a": [],
+        "only_in_b": []
+    },
+    "document_comparison": {
+        "total_a": 5,
+        "total_b": 5,
+        "matching": [
+            "101",
+            "103"
+        ],
+        "modified": [
+            {
+                "id": "102",
+                "differences": {
+                    "salary": {
+                        "A": 25000,
+                        "B": 27000
+                    }
+                }
+            },
+            {
+                "id": "104",
+                "differences": {
+                    "name": {
+                        "A": "Arjun",
+                        "B": "Sneha"
+                    },
+                    "salary": {
+                        "A": 40000,
+                        "B": 28000
+                    },
+                    "location": {
+                        "A": "Hyderabad",
+                        "B": "Pune"
+                    },
+                    "department": {
+                        "A": "IT",
+                        "B": "Testing"
+                    }
+                }
+            },
+            {
+                "id": "105",
+                "differences": {
+                    "name": {
+                        "A": "Sneha",
+                        "B": "Kiran"
+                    },
+                    "salary": {
+                        "A": 28000,
+                        "B": 32000
+                    },
+                    "location": {
+                        "A": "Pune",
+                        "B": "Mumbai"
+                    },
+                    "department": {
+                        "A": "Testing",
+                        "B": "Support"
+                    }
+                }
+            }
+        ],
+        "missing_in_a": [],
+        "missing_in_b": []
+    }
+}

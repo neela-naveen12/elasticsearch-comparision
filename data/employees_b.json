@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Gokul",
+    "department": "IT",
+    "salary": 30000,
+    "location": "Hyderabad"
+  },
+  {
+    "name": "Rahul",
+    "department": "HR",
+    "salary": 27000,
+    "location": "Bangalore"
+  },
+  {
+    "name": "Priya",
+    "department": "Finance",
+    "salary": 35000,
+    "location": "Chennai"
+  },
+  {
+    "name": "Sneha",
+    "department": "Testing",
+    "salary": 28000,
+    "location": "Pune"
+  },
+  {
+    "name": "Kiran",
+    "department": "Support",
+    "salary": 32000,
+    "location": "Mumbai"
+  }
+]

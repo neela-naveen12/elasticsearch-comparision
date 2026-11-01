@@ -1,0 +1,32 @@
+services:
+  elasticsearch-a:
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.5.5
+    container_name: elasticsearch-a
+    environment:
+      - node.name=elasticsearch-a
+      - cluster.name=cluster-a
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "127.0.0.1:9200:9200"
+    volumes:
+      - esdata-a:/usr/share/elasticsearch/data
+
+  elasticsearch-b:
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.5.5
+    container_name: elasticsearch-b
+    environment:
+      - node.name=elasticsearch-b
+      - cluster.name=cluster-b
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "127.0.0.1:9201:9200"
+    volumes:
+      - esdata-b:/usr/share/elasticsearch/data
+
+volumes:
+  esdata-a:
+  esdata-b:
